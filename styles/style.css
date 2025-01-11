@@ -12,10 +12,16 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     background-color: #f5f5f5
 }
+button{
+    cursor: pointer;
 
+}
+button:hover{
+        box-shadow: 0px 4px 15px blue;
+        background-color: tomato;
+}
 
 /* shared styles */
 .color1 {
@@ -39,21 +45,28 @@ main {
 
 /* banner styles */
 .hero {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
     margin-bottom: 80px;
     margin-top: 120px;
 }
 
 .banner {
-    max-width: 1280px;
+    max-width: 100%;
+    /* max-height: 560px;
+    padding: 80px 100px;
+    border-radius: 24px;
+    background-color: #C6E4D6;
+    display: flex; */
+    display: flex;
+    justify-content: center;
+
+}
+.banner-div{
+    width: 1080px;
     max-height: 560px;
     padding: 80px 100px;
     border-radius: 24px;
     background-color: #C6E4D6;
     display: flex;
-
 }
 
 .banner-description {
@@ -92,10 +105,6 @@ main {
 }
 
 /* vision styles */
-.vision {
-    display: flex;
-    justify-content: center;
-}
 
 .vision-title {
     font-size: 40px;
@@ -113,14 +122,23 @@ main {
     margin-bottom: 32px;
 
 }
-
-.visions-container {
-    display: flex;
-    gap: 24px;
+.visions-para{
+    margin-bottom: 24px;
 }
 
+.visions-container {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    justify-content: baseline;
+}
+.vision-divv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .vision-div {
-    max-width: 1280px;
+    width: 1280px;
     display: flex;
     flex-direction: column;
 }
@@ -136,17 +154,20 @@ main {
     border-radius: 16px;
     padding: 32px;
     background-color: rgba(84, 144, 245, 0.2);
+    width: 360px;
 }
 .vision2 {
     border-radius: 16px;
     padding: 32px;
     background-color: rgb(244, 76, 76);
+    width: 360px;
 }
 
 .vision3 {
     border-radius: 16px;
     padding: 32px;
     background-color: #F7EBCF;
+    width: 360px;
 }
 
 .btn-primary1 {
@@ -158,10 +179,10 @@ main {
     font-size: 18px;
     font-weight: 600;
     border: none;
+    
 }
 
 .btn-primary2 {
-    /* padding: 17px 34px; */
     width: 122px;
     height: 41px;
     background-color: #5490F5;
@@ -174,7 +195,7 @@ main {
 }
 
 .btn-primary3 {
-    /* padding: 17px 34px; */
+
     width: 122px;
     height: 41px;
     background-color: #FFC239;
@@ -187,7 +208,7 @@ main {
 }
 .quote{
     padding: 48px 24px;
-    width: 1280px;
+    width: 1230px;
     max-height: 256px;
     border-radius: 16px;
     background-image: url('../assets/quote-bg.png');
@@ -290,8 +311,16 @@ main {
 }
 
 /* Donate section started */
+.donate-div1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.donate-div2{
+    text-align: center;
+}
 .donate{
-    max-width: 1280px;
     display: flex;
     flex-direction: column;
 }
@@ -322,6 +351,11 @@ main {
     font-size: 40px;
     font-weight: bold;
     border-color: #e9e9e9;
+}
+.donate-sum:hover {
+    box-shadow: 0px 4px 15px blue;
+    color: red;
+    background-color: aqua;
 }
 .Other{
     width:100%;
@@ -357,10 +391,11 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 80px;
 }
 .letter-div2{
     display: flex;
-    width:1280px ;
+    width: 1080px;
     max-height: 395px;
     flex-direction: column;
     text-align: center;
@@ -391,8 +426,10 @@ main {
     border-bottom-left-radius: 8px;
     border: none;
     padding: 18px 40px;
-    color:rgba(14, 14, 14, 0.3);
 } 
+.letter-input::placeholder{
+    color: rgba(14, 14, 14, 0.3);
+}
 .subscribe{
     width: 150px;
     height: 55px;
